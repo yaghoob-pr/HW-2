@@ -1,0 +1,143 @@
+@font-face {
+  src: url(WorkSans-VariableFont_wght.ttf);
+  font-family: workSans;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: workSans;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eceef0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 370px;
+  border-radius: 5px;
+}
+
+.bg-container img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.bg-container {
+  width: 450px;
+  height: 120px;
+
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: large;
+}
+
+form {
+  width: 100%;
+  height: 250px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+form label {
+  color: #999;
+  margin-right: 20px;
+  font-size: 12px;
+}
+
+.username-div input,
+.password-div input {
+  width: 240px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #dcdcdc;
+  padding-bottom: 10px;
+  font-size: small;
+}
+
+.username-div {
+  margin-top: 30px;
+}
+
+.password-div {
+  margin-top: 20px;
+}
+
+form input::placeholder {
+  color: #aaa;
+  font-size: 10px;
+}
+
+.options input {
+  width: 10px;
+  height: 10px;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #999999;
+  width: 240px;
+  margin-top: 5px;
+  margin-left: 70px;
+  font-size: 10px;
+}
+
+.options a {
+  text-decoration: none;
+  color: #999999;
+}
+
+.login-btn {
+  display: flex;
+  width: 240px;
+  justify-content: flex-start;
+  margin-left: 60px;
+}
+
+.login-btn button {
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: #6fb554;
+  color: white;
+  display: block;
+  margin-top: 20px;
+}
+
+.login-btn button:hover {
+  cursor: pointer;
+  background-color: rgb(109, 184, 35);
+}
