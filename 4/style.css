@@ -1,0 +1,172 @@
+@font-face {
+  src: url(WorkSans-VariableFont_wght.ttf);
+  font-family: workSans;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: workSans;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.right-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #feba33;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.left-section {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #225d65;
+  clip-path: polygon(0 0, 46% 0, 41% 100%, 0 100%);
+  display: flex;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 380px;
+  height: 360px;
+  margin-right: 10%;
+  margin-top: 15%;
+  background: white;
+  border-radius: 7px;
+  box-shadow: -1px -1px 25px -4px rgba(0, 0, 0, 0.65);
+}
+
+.left-section img {
+  height: 54%;
+  width: 30%;
+  margin-left: 5%;
+  position: relative;
+}
+
+.ray {
+  position: absolute;
+  width: 24%;
+  height: 59%;
+  background: rgb(236, 236, 117);
+  clip-path: polygon(0 0, 62% 6%, 61% 88%, 0% 100%);
+  top: 22%;
+  opacity: 0.1;
+}
+
+form input {
+  width: 350px;
+  padding: 14px;
+  background: #f7f9f8;
+  outline: none;
+  border: none;
+}
+
+.username,
+.password {
+  width: 350px;
+  box-shadow: 0px 1px 18px -2px rgba(9, 10, 9, 0.12);
+  display: flex;
+  margin-bottom: 12px;
+  background: #f7f9f8;
+}
+
+#show-pas {
+  border: none;
+  outline: none;
+  position: absolute;
+  left: 90%;
+  top: 14px;
+}
+
+#show-pas {
+  cursor: pointer;
+  color: rgb(204, 203, 203);
+}
+
+.password {
+  position: relative;
+}
+
+form input:hover {
+  background-color: white;
+}
+.members-help {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  box-shadow: 0px 15px 23px 0px #ece6dc;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.already-members {
+  color: #ebce2c;
+  text-decoration: none;
+}
+.already-members:hover,
+.need-help:hover {
+  text-decoration: underline;
+}
+.need-help {
+  color: rgb(182, 181, 181);
+  text-decoration: none;
+}
+
+.username {
+  margin-top: 40px;
+}
+
+.sign-in-btn {
+  width: 350px;
+  padding: 20px;
+  background: #1a535c;
+  outline: none;
+  border: none;
+  color: white;
+  margin-top: 40px;
+  border-radius: 5px;
+}
+
+.sign-in-btn:hover {
+  cursor: pointer;
+  background-color: #086472;
+}
+
+.create-account {
+  width: 260px;
+  margin-top: 5%;
+  margin-right: 13%;
+  text-align: center;
+}
+
+.create-account div {
+  color: white;
+  font-size: large;
+  padding-bottom: 15px;
+}
+
+.create-account a {
+  color: #1a535c;
+  text-decoration: none;
+}
+
+.create-account a:hover {
+  text-decoration: underline;
+}
