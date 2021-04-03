@@ -1,0 +1,142 @@
+@font-face {
+  src: url(WorkSans-VariableFont_wght.ttf);
+  font-family: workSans;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: workSans;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.background > img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+}
+
+.container {
+  position: absolute;
+  width: 300px;
+  height: 440px;
+  border-radius: 5px;
+  background-color: turquoise;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(#787af5, #ad36f0);
+}
+
+.logo img {
+  background-color: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-top: 40px;
+}
+
+.title {
+  margin-top: 20px;
+  color: white;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.username input,
+.password input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 7px;
+}
+
+form input::placeholder {
+  color: white;
+  font-size: 11px;
+}
+
+.username,
+.password {
+  width: 80%;
+  border-bottom: 1px solid #979599;
+}
+
+form i {
+  color: white;
+  font-size: 11px;
+  margin-left: 3px;
+}
+
+.password {
+  margin-top: 20px;
+}
+
+.remember-me {
+  width: 80%;
+  margin-top: 25px;
+}
+
+.remember-me label {
+  color: white;
+  font-size: 11px;
+}
+
+.remember-me input {
+  height: 12px;
+  width: 12px;
+  margin-left: 0px;
+}
+
+input {
+  color: white;
+}
+
+form button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 20px;
+  padding: 8px 20px;
+  margin-top: 25px;
+}
+
+form button:hover,
+form button:active {
+  background-color: #787af5;
+  color: white;
+}
+
+.forgot a {
+  color: white;
+  text-decoration: none;
+  font-size: x-small;
+}
+
+.forgot {
+  margin-top: 30px;
+}
